@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Income and Expense</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Income and Expense</h1>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h6>Income per month</h6>
+        <div class="inputs-wrapper">
+            <input
+                    type="number"
+                    placeholder="Salary"
+                    id="income-salary"
+                    class="input"
+            >
+            <input
+                    type="number"
+                    placeholder="Freelance"
+                    id="income-freelance"
+                    class="input"
+            >
+            <input
+                    type="number"
+                    placeholder="Additional income"
+                    id="income-extra-1"
+                    class="input"
+            >
+            <input
+                    type="number"
+                    placeholder="Additional income"
+                    id="income-extra-2"
+                    class="input"
+            >
+        </div>
+
+        <h6>Obligatory expenses</h6>
+
+        <div class="inputs-wrapper">
+            <input
+                    type="number"
+                    placeholder="Flat rent"
+                    id="costs-flat"
+                    class="input"
+            >
+            <input
+                    type="number"
+                    placeholder="Communal apartment"
+                    id="costs-house-services"
+                    class="input"
+            >
+            <input
+                    type="number"
+                    placeholder="Transport"
+                    id="costs-transport"
+                    class="input"
+            >
+            <input
+                    type="number"
+                    placeholder="Credits"
+                    id="costs-credit"
+                    class="input"
+            >
+        </div>
+
+        <div class="total-block">
+            <div class="total-numb">
+                <h6>Available per month</h6>
+                <input
+                        type="number"
+                        class="total"
+                        id="total-month"
+                        value="0"
+                        readonly
+                >
+            </div>
+            <div class="total-numb">
+                <h6>Available on a day</h6>
+                <input
+                        type="number"
+                        class="total"
+                        id="total-day"
+                        value="0"
+                        readonly>
+            </div>
+            <div class="total-numb">
+                <h6>Will be accumulated in a year:</h6>
+                <input
+                        type="number"
+                        class="total"
+                        id="total-year"
+                        value="0"
+                        readonly>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="range-section">
+    <div class="container">
+        <div class="accumulation-block">
+            <div class="range-block">
+                <h6>Money box (how much to save?)</h6>
+                <div class="range-wrapper">
+                    <input type="range" min="0" max="100" value="0" id="money-box-range" disabled>
+                </div>
+                <div><span id="total-percents">0</span>%</div>
+            </div>
+            <div class="result-block">
+                <div class="total-numb">
+                    <h6>Accumulation:</h6>
+                    <input
+                            type="number"
+                            id="accumulation"
+                            value="0"
+                            readonly
+                    >
+                </div>
+                <div class="total-numb">
+                    <h6>Spending:</h6>
+                    <input type="number" id="spend" value="0" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="developer-block">
+            <a href="https://www.instagram.com/maxim_sverlovych/?hl=ru" class="developer-link">Developer</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
